@@ -43,10 +43,13 @@ bool init(const char* title, int xpos, int ypos,
 
 void render()
 {
+		SDL_SetRenderDrawColor(g_pRenderer, 0, 0, 0, 255);
+	
     SDL_RenderClear(g_pRenderer);
 
 	  SDL_RenderCopy(g_pRenderer, m_pTexture, &m_sourceRectangle, &m_destinationRectangle);
 
+		filledCircleColor(g_pRenderer, 200, 200, 100, 0xFFFFFF00); 
 	
     SDL_RenderPresent(g_pRenderer);
 }

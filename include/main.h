@@ -1,6 +1,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
-
+#include <SDL2/SDL2_gfxPrimitives.h>
+	
 SDL_Window* g_pWindow = 0;
 SDL_Renderer* g_pRenderer = 0;
 bool g_bRunning = false;

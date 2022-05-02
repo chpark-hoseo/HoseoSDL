@@ -26,7 +26,7 @@ SDL_LIBS := -L$(SDL_LIB)/libSDL2_2.0.so -lSDL2 -L$(SDL_LIB)/libSDL2_image-2.0.so
 all: $(EXE)
 
 $(EXE): $(OBJ) | $(BIN_DIR)
-	$(CC) $(LDFLAGS) $^ $(SDL_LIBS) -o $@
+	$(CC) $(LDFLAGS) $^ $(SDL_LIBS) $(LDLIBS) -o $@
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp | $(OBJ_DIR)
 	$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@

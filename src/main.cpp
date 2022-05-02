@@ -24,7 +24,7 @@ bool init(const char* title, int xpos, int ypos,
 
     SDL_SetRenderDrawColor(g_pRenderer, 0, 0, 0, 255);
 
-  SDL_Surface* pTempSurface = IMG_Load("/home/runner/HoseoSDL/assets/animate-alpha.png");
+  SDL_Surface* pTempSurface = IMG_Load("./assets/animate-alpha.png");
   m_pTexture = SDL_CreateTextureFromSurface(g_pRenderer, pTempSurface);
   SDL_FreeSurface(pTempSurface);
 

@@ -1,2 +1,42 @@
+
+
+## replit
+
+1. Makefile 설정
+
+https://stackoverflow.com/questions/30573481/how-to-write-a-makefile-with-separate-source-and-header-directories
+
+2. 실행 명령
+
 콘솔 창에서 make run 하면 실행
+
 콘솔 창에서 make clean 하면 불필요한 폴더/파일 삭제 
+
+
+## PC
+
+1. 외부 DLL 경로 추가하기 
+
+https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=sharonichoya&logNo=220817543315
+https://stackoverflow.com/questions/2119539/how-do-i-set-the-path-to-a-dll-file-in-visual-studio
+
+2. Git Desktop ignore 설정
+
+https://racoon-t.tistory.com/9
+
+3. 유니 코드 에러 발생시  
+
+https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=mk002060&logNo=221116749586
+UTF-8 (BOM)
+
+
+## 다운로드
+
+SDL2 : 2.0.8
+https://www.libsdl.org/release/
+
+SDL2_image : 2.0.3
+https://www.libsdl.org/projects/SDL_image/release/
+
+SDL2_GFX : 1.0.4 
+http://www.ferzkopp.net/wordpress/2016/01/02/sdl_gfx-sdl2_gfx/

@@ -40,3 +40,9 @@ https://www.libsdl.org/projects/SDL_image/release/
 
 SDL2_GFX : 1.0.4 
 http://www.ferzkopp.net/wordpress/2016/01/02/sdl_gfx-sdl2_gfx/
+
+SDL2_TTF : 2.0.14
+https://www.libsdl.org/projects/SDL_ttf/release/SDL2_ttf-devel-2.0.14-VC.zip
+
+SDL2_Mixer : 2.0.2
+https://www.libsdl.org/projects/SDL_mixer/release/SDL2_mixer-devel-2.0.2-VC.zip

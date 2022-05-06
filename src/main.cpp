@@ -92,7 +92,7 @@ void render()
 
 int main(int argc, char* argv[])
 {
-    if (init("Breaking Up HelloSDL", 
+    if (init("HoseoSDL ", 
               SDL_WINDOWPOS_CENTERED,
               SDL_WINDOWPOS_CENTERED, 
               640, 480,

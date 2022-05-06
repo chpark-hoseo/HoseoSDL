@@ -34,8 +34,8 @@ bool init(const char* title, int xpos, int ypos,
   m_destinationRectangle.w = m_sourceRectangle.w;
   m_destinationRectangle.h = m_sourceRectangle.h;
 
-  m_destinationRectangle.x = m_sourceRectangle.x = 0;
-  m_destinationRectangle.y = m_sourceRectangle.y = 0;
+    m_destinationRectangle.x = m_sourceRectangle.x = 0;
+    m_destinationRectangle.y = m_sourceRectangle.y = 0;
 		
 
     return true;
@@ -43,13 +43,13 @@ bool init(const char* title, int xpos, int ypos,
 
 void render()
 {
-		SDL_SetRenderDrawColor(g_pRenderer, 0, 0, 0, 255);
+    SDL_SetRenderDrawColor(g_pRenderer, 0, 0, 0, 255);
 	
     SDL_RenderClear(g_pRenderer);
 
-	  SDL_RenderCopy(g_pRenderer, m_pTexture, &m_sourceRectangle, &m_destinationRectangle);
+    SDL_RenderCopy(g_pRenderer, m_pTexture, &m_sourceRectangle, &m_destinationRectangle);
 
-		filledCircleColor(g_pRenderer, 200, 200, 100, 0xFFFFFF00); 
+    filledCircleColor(g_pRenderer, 300, 300, 50, 0xFFFF0000); 
 	
     SDL_RenderPresent(g_pRenderer);
 }

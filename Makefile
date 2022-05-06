@@ -11,7 +11,7 @@ BIN_DIR := $(HOME)/bin
 SDL_INC := $(HOME)/3rdParty/SDL/include
 SDL_LIB := $(HOME)/3rdParty/SDL/lib/x86_64-linux-gnu
 
-
+CC := c++
 EXE := $(BIN_DIR)/a.out
 SRC := $(wildcard $(SRC_DIR)/*.cpp)
 OBJ := $(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)

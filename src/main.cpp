@@ -1,6 +1,6 @@
 
 #include "main.h"
-
+//#include <iostream>
 bool init(const char* title, int xpos, int ypos, 
           int height, int width, int flags)
 {
@@ -68,7 +68,7 @@ int main(int argc, char* argv[])
     {
         return 1; // something's wrong
     }
-
+//std::cout << "CPP TEST " << std::endl;
     while (g_bRunning)
     {
         // handle input - update - render

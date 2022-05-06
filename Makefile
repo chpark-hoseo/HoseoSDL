@@ -20,7 +20,7 @@ CPPFLAGS := -Iinclude -MMD -MP -I$(INC_DIR) -I$(SDL_INC)
 CFLAGS   := -Wall
 LDFLAGS  := -Llib
 LDLIBS   := -lm
-SDL_LIBS := -L$(SDL_LIB)/libSDL2_2.0.so -lSDL2 -L$(SDL_LIB)/libSDL2_image-2.0.so $(SDL_LIB)/libSDL2_image.a -lpng -ljpeg -ltiff -lwebp -L $(SDL_LIB)/libSDL2_gfx.so $(SDL_LIB)/libSDL2_gfx.a
+SDL_LIBS := -L$(SDL_LIB)/libSDL2_2.0.so -lSDL2 -L$(SDL_LIB)/libSDL2_image-2.0.so $(SDL_LIB)/libSDL2_image.a -L $(SDL_LIB)/libSDL2_gfx.so $(SDL_LIB)/libSDL2_gfx.a -L $(SDL_LIB)/libSDL2_ttf-2.0.so $(SDL_LIB)/libSDL2_ttf.a -lfreetype -lpng -ljpeg -ltiff -lwebp 
 
 .PHONY: all clean
 

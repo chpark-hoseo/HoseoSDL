@@ -1,6 +1,7 @@
 # Define the link target.
 linkTarget = a.out
 
+#pwd 명령으로 확인 가능
 HOME = /home/runner/HoseoSDL
 
 SRC_DIR := $(HOME)/src
@@ -21,7 +22,7 @@ LDFLAGS  := -Llib
 LDLIBS   := -lm
 SDL_LIBS := -L$(SDL_LIB)/libSDL2_2.0.so -lSDL2 -L$(SDL_LIB)/libSDL2_image-2.0.so $(SDL_LIB)/libSDL2_image.a -lpng -ljpeg -ltiff -lwebp -L $(SDL_LIB)/libSDL2_gfx.so $(SDL_LIB)/libSDL2_gfx.a
 
-.PHONY: all run clean
+.PHONY: all clean
 
 all: $(EXE)
 

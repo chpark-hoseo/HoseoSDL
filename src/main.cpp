@@ -1,4 +1,4 @@
-//#include "main.h"
+﻿//#include "main.h"
 #include <stdio.h>
 #include <iostream>
 #include <SDL2/SDL.h>
@@ -43,10 +43,14 @@ int main(int argc, char* argv[])
     SDL_FreeSurface(pTempSurface);
 		rectImage = { 0, 0, 128, 82 };
 
-		// SDL TTF
-		SDL_Color color_Blue = { 0, 0, 255 };
+	// SDL TTF
+    SDL_Color color_Blue = { 0, 0, 255 };
     SDL_Color color_White = { 255, 255, 255 };
-	  SDL_Surface* temp_surf = TTF_RenderUTF8_Shaded(m_pFont, "한글 텍스쳐", color_Blue, color_White);
+#ifdef UNICODE
+    SDL_Surface* temp_surf = TTF_RenderUNICODE_Shaded(m_pFont, (Uint16*)L"한글 텍스쳐", color_Blue, color_White);
+#else
+    SDL_Surface* temp_surf = TTF_RenderUTF8_Shaded(m_pFont, "한글 텍스쳐", color_Blue, color_White);
+#endif
 		if (temp_surf == 0) {	
 				SDL_Log("%s", TTF_GetError());
         return false;

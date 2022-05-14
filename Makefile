@@ -2,7 +2,7 @@
 linkTarget = a.out
 
 #pwd 명령으로 확인 가능
-HOME = /home/runner/HoseoSDL
+HOME = $(PWD)
 
 SRC_DIR := $(HOME)/src
 INC_DIR := $(HOME)/include
@@ -53,6 +53,7 @@ install:
 setup:
 	export LIBRARY_PATH=$(SDL_LIB)
 	export LD_LIBRARY_PATH=$(SDL_LIB)
+
 -include $(OBJ:.o=.d)
 
 run: $(EXE)

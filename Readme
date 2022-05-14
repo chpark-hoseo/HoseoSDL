@@ -6,12 +6,22 @@
 
 https://stackoverflow.com/questions/30573481/how-to-write-a-makefile-with-separate-source-and-header-directories
 
-2. 실행 명령
+2. Makefile 수정하기
+#pwd 명령으로 확인하여 아래 내용 자신의 폴더에 맞도록 수정 (빈칸 주의)
+HOME = /home/runner/HoseoSDL
+
+
+3. 실행 명령
+
+콘솔 창에서 make setup 하면 실행
+export 관련된 명령어 2줄을 콘솔에 복사하여 붙여넣기 
 
 콘솔 창에서 make run 하면 실행
 
 콘솔 창에서 make clean 하면 불필요한 폴더/파일 삭제 
 
+4. git 연결 해지 
+rm -r -f .git
 
 ## PC
 
